@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "plexmod:block/ruby_pressure_plate" },
+    "powered=true": { "model": "plexmod:block/ruby_pressure_plate_down" }
+  }
+}

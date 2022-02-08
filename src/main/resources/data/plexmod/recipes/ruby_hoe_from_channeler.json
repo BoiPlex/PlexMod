@@ -1,0 +1,15 @@
+{
+  "type": "plexmod:lightning",
+  "weather": "clear",
+  "ingredients": [
+    {
+      "item": "plexmod:ruby"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "output": {
+    "item": "plexmod:ruby_hoe"
+  }
+}

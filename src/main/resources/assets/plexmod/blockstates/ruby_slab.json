@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "plexmod:block/ruby_slab"
+    },
+    "type=double": {
+      "model": "plexmod:block/ruby_block"
+    },
+    "type=top": {
+      "model": "plexmod:block/ruby_slab_top"
+    }
+  }
+}

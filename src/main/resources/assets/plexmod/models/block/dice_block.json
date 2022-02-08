@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "plexmod:block/dice_block_one",
+    "up": "plexmod:block/dice_block_six",
+    "north": "plexmod:block/dice_block_three",
+    "east": "plexmod:block/dice_block_five",
+    "south": "plexmod:block/dice_block_four",
+    "west": "plexmod:block/dice_block_two",
+    "particle": "plexmod:block/dice_block_one"
+  }
+}

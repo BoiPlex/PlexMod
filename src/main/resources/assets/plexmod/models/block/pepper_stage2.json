@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "plexmod:block/pepper_stage2"
+  }
+}

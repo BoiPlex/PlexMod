@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "plexmod:ruby"
+    },
+    "title": "Tutorial Mod",
+    "description": "The Power lies in the Ruby!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "plexmod:textures/block/ruby_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "plexmod:ruby"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

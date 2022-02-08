@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.endplex.plexmod.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "ModEntityDataSaver"
+  ],
+  "client": [
+    "PlexModMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

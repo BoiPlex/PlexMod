@@ -1,0 +1,9 @@
+{
+  "small_explosion": {
+    "category": "blocks",
+    "subtitle": "plexmod.small_explosion",
+    "sounds": [
+      "plexmod:small_explosion"
+    ]
+  }
+}

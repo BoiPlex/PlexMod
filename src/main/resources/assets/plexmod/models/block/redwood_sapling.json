@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "plexmod:block/redwood_sapling"
+  }
+}

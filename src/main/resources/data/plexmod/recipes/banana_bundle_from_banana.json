@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "plexmod:banana"
+    },
+    {
+      "item": "plexmod:banana"
+    },
+    {
+      "item": "plexmod:banana"
+    }
+  ],
+  "result": {
+    "item": "plexmod:banana_bundle",
+    "count": 1
+  }
+}

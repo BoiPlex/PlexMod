@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "plexmod:block/ruby_door_top",
+    "bottom": "plexmod:block/ruby_door_bottom"
+  }
+}

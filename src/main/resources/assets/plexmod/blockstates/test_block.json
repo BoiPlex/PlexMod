@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "clicked=false": { "model": "plexmod:block/test_block_normal" },
+    "clicked=true": { "model": "plexmod:block/test_block_clicked" }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "plexmod:block/ruby_block",
+    "top": "plexmod:block/ruby_block",
+    "side": "plexmod:block/ruby_block"
+  }
+}
