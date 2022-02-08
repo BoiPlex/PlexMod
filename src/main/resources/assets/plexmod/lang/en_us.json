@@ -53,7 +53,7 @@
   "item.plexmod.banana_bundle": "Banana Bundle",
   "item.plexmod.banana_ingot": "Banana Ingot",
   "item.plexmod.banana_bread": "Banana Bread",
-  "item.plexmod.drill": "Drill",
+  "item.plexmod.iron_drill": "Iron Drill",
 
   "block.plexmod.banana_ore": "Banana Ore",
   "block.plexmod.banana_block": "Banana Block",
@@ -64,6 +64,6 @@
   "enchantment.plexmod.berserker": "Berserker",
   "enchantment.plexmod.test": "Test",
 
-  "tooltip.plexmod.drill": "Hold §eSHIFT§r for more Information...",
-  "tooltip.plexmod.drill_shift": "Mine in a 3x3 area!"
+  "tooltip.plexmod.iron_drill": "Hold §eSHIFT§r for more Information...",
+  "tooltip.plexmod.iron_drill_shift": "Mine in a 3x3 area!"
 }

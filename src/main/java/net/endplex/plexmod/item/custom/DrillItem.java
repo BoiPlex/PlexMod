@@ -8,6 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
@@ -23,10 +24,12 @@ public class DrillItem extends ModPickaxeItem {
 
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-        for (int i = -1; i <= 1; i++) {
-            for (int j = -1; j <= 1; j++) {
-                for (int k = -1; k <= 1; k++) {
-                    world.breakBlock(pos.add(i, j, k), true);
+        if (getMaterial() == ToolMaterials.IRON) {
+            for (int i = -1; i <= 1; i++) {
+                for (int j = -1; j <= 1; j++) {
+                    for (int k = -1; k <= 1; k++) {
+                        world.breakBlock(pos.add(i, j, k), true);
+                    }
                 }
             }
         }
@@ -37,9 +40,9 @@ public class DrillItem extends ModPickaxeItem {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(Screen.hasShiftDown()){
-            tooltip.add(new TranslatableText("tooltip.plexmod.drill_shift"));
+            tooltip.add(new TranslatableText("tooltip.plexmod.iron_drill_shift"));
         } else {
-            tooltip.add(new TranslatableText("tooltip.plexmod.drill"));
+            tooltip.add(new TranslatableText("tooltip.plexmod.iron_drill"));
         }
 
         super.appendTooltip(stack, world, tooltip, context);

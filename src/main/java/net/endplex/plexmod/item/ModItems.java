@@ -23,10 +23,13 @@ public class ModItems {
             .food(new FoodComponent.Builder().hunger(6).saturationModifier(1f).build())
             .group(ModItemGroup.PLEX)));
 
-    public static final Item DRILL = registerItem("drill",
+    public static final Item IRON_DRILL = registerItem("iron_drill",
             new DrillItem(ToolMaterials.IRON, 0, 2f,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
-
+    
+    
+    
+    
     // -----
 
     public static final Item RUBY = registerItem("ruby",
