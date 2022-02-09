@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "plexmod:ruby_shovel"
+    "plexmod:ruby_shovel",
+    "plexmod:glass_shovel"
   ]
 }

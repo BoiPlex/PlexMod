@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "plexmod:ruby_axe"
+    "plexmod:ruby_axe",
+    "plexmod:glass_axe"
   ]
 }
+

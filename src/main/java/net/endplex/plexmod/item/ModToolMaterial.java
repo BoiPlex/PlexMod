@@ -13,8 +13,7 @@ public enum ModToolMaterial implements ToolMaterial {
     RUBY(2, 1500, 8.0F, 1.0F, 24, () -> {
         return Ingredient.ofItems(ModItems.RUBY);
     }),
-
-    BANANA(2, 1500, 8.0F, 1.0F, 24, () -> {
+    BANANA(1, 10, 20.0F, 6.0F, 100, () -> {
         return Ingredient.ofItems(ModItems.BANANA_INGOT);
     });
 

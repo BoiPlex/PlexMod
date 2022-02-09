@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "plexmod:ruby_hoe"
+    "plexmod:ruby_hoe",
+    "plexmod:glass_hoe"
   ]
 }

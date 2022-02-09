@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "plexmod:ruby_pickaxe"
+    "plexmod:ruby_pickaxe",
+    "plexmod:glass_pickaxe"
   ]
 }

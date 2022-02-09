@@ -26,9 +26,23 @@ public class ModItems {
     public static final Item IRON_DRILL = registerItem("iron_drill",
             new DrillItem(ToolMaterials.IRON, 0, 2f,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
-    
-    
-    
+
+    public static final Item BANANA_SWORD = registerItem("banana_sword",
+            new SwordItem(ModToolMaterial.BANANA, 10, 1f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item BANANA_SHOVEL = registerItem("banana_shovel",
+            new ShovelItem(ModToolMaterial.BANANA, 0, 1f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item BANANA_PICKAXE = registerItem("banana_pickaxe",
+            new ModPickaxeItem(ModToolMaterial.BANANA, 0, 1f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item BANANA_AXE = registerItem("banana_axe",
+            new ModAxeItem(ModToolMaterial.BANANA, 15, -1f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item BANANA_HOE = registerItem("banana_hoe",
+            new ModHoeItem(ModToolMaterial.BANANA, 0, 0f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+
     
     // -----
 

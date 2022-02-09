@@ -53,6 +53,11 @@
   "item.plexmod.banana_bundle": "Banana Bundle",
   "item.plexmod.banana_ingot": "Banana Ingot",
   "item.plexmod.banana_bread": "Banana Bread",
+  "item.plexmod.banana_pickaxe": "Banana Pickaxe",
+  "item.plexmod.banana_axe": "Banana Axe",
+  "item.plexmod.banana_shovel": "Banana Shovel",
+  "item.plexmod.banana_hoe": "Banana Hoe",
+  "item.plexmod.banana_sword": "Banana Sword",
   "item.plexmod.iron_drill": "Iron Drill",
 
   "block.plexmod.banana_ore": "Banana Ore",
