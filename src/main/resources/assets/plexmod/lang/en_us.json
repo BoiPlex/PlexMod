@@ -62,10 +62,12 @@
   "item.plexmod.banana_chestplate": "Banana Chestplate",
   "item.plexmod.banana_leggings": "Banana Leggings",
   "item.plexmod.banana_boots": "Banana Boots",
+  "item.plexmod.banana_wand": "Banana Wand",
   "item.plexmod.iron_drill": "Iron Drill",
 
   "block.plexmod.banana_ore": "Banana Ore",
   "block.plexmod.banana_block": "Banana Block",
+  "block.plexmod.boost_block": "Boost Block",
 
   "enchantment.plexmod.blast": "Blast",
   "enchantment.plexmod.hive_master": "Hive Master",
@@ -74,5 +76,6 @@
   "enchantment.plexmod.test": "Test",
 
   "tooltip.plexmod.iron_drill": "Hold §eSHIFT§r for more Information...",
-  "tooltip.plexmod.iron_drill_shift": "Mine in a 3x3 area!"
+  "tooltip.plexmod.iron_drill_shift": "Mine in a 3x3 area!",
+  "tooltip.plexmod.boost_block": "Step on me for a boost!"
 }

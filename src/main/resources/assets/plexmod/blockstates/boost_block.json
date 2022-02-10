@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "plexmod:block/boost_block" }
+  }
+}

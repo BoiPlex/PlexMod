@@ -22,8 +22,14 @@ public class ModBlocks {
                     .breakByTool(FabricToolTags.PICKAXES, 2).requiresTool()));
 
     public static final Block BANANA_BLOCK = registerBlock("banana_block",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)
-                    .breakByTool(FabricToolTags.AXES, 2).requiresTool()));
+            new Block(FabricBlockSettings.of(Material.PLANT).strength(2.0f)
+                    .breakByTool(FabricToolTags.SHEARS, 1)));
+
+    public static final Block BOOST_BLOCK = registerBlock("boost_block",
+            new BoostBlock(FabricBlockSettings.of(Material.METAL).strength(6.0f)
+                    .breakByTool(FabricToolTags.PICKAXES, 2).requiresTool()));
+
+    // -----
 
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)
