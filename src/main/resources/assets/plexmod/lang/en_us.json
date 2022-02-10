@@ -77,5 +77,6 @@
 
   "tooltip.plexmod.iron_drill": "Hold §eSHIFT§r for more Information...",
   "tooltip.plexmod.iron_drill_shift": "Mine in a 3x3 area!",
-  "tooltip.plexmod.boost_block": "Step on me for a boost!"
+  "tooltip.plexmod.boost_block": "Step on me for a boost!",
+  "tooltip.plexmod.banana_wand": "Try right clicking blocks or banana blocks!"
 }

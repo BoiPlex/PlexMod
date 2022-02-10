@@ -40,7 +40,7 @@ public class BoostBlock extends Block {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
-        tooltip.add(new TranslatableText("tooltip.plexmod.boost_block")); // Add translation to this
+        tooltip.add(new TranslatableText("tooltip.plexmod.boost_block")); // Translation added
 
         super.appendTooltip(stack, world, tooltip, options);
     }

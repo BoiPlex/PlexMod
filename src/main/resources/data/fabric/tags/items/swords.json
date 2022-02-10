@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "plexmod:ruby_swords",
-    "plexmod:glass_swords"
+    "plexmod:ruby_sword",
+    "plexmod:banana_sword"
   ]
 }
