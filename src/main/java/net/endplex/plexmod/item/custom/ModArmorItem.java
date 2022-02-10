@@ -24,7 +24,10 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmorMaterial.RUBY, StatusEffects.INVISIBILITY)
                     .put(ArmorMaterials.GOLD, StatusEffects.HASTE)
                     .put(ArmorMaterials.LEATHER, StatusEffects.SPEED)
+                    .put(ModArmorMaterial.BANANA, StatusEffects.REGENERATION)
+                    .put(ArmorMaterials.NETHERITE, StatusEffects.SLOWNESS)
                     .build();
+            // If you want unique effects/abilities or no potion effect you can edit the addStatusEffectForMaterial method
 
     public ModArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -59,12 +62,34 @@ public class ModArmorItem extends ArmorItem {
     private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffect mapStatusEffect) {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect);
 
-        if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect, 200));
+        int amplifier = 0;
+        // Banana armor gives regen 2
+        if (mapArmorMaterial == ModArmorMaterial.BANANA) {
+            amplifier = 1;
+        }
 
-            if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
-                player.getInventory().damageArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});
+        // If has correct armor
+        if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+            // Netherite armor gives strength 2 if on fire and not already have strength
+            if (mapArmorMaterial == ArmorMaterials.NETHERITE && player.isOnFire() && !player.hasStatusEffect(StatusEffects.STRENGTH)) {
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20, 1));
             }
+            // Leather armor gives temporary jump 3 if sneaking (sneak + jump for a high jump)
+            if (mapArmorMaterial == ArmorMaterials.LEATHER && player.isSneaking()) {
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 5, 2));
+            }
+
+            // If player doesn't already have an effect
+            if (!hasPlayerEffect) {
+                // Give effect
+                player.addStatusEffect(new StatusEffectInstance(mapStatusEffect, 200, amplifier));
+
+                // 60% chance to damage ruby armor after giving effect
+                if(mapArmorMaterial == ModArmorMaterial.RUBY && new Random().nextFloat() > 0.6f) {
+                    player.getInventory().damageArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});
+                }
+            }
+
         }
     }
 

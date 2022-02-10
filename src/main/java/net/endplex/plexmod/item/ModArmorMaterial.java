@@ -15,6 +15,10 @@ public enum ModArmorMaterial implements ArmorMaterial {
     RUBY("ruby", 27, new int[]{3, 5, 9, 3}, 25, SoundEvents.ITEM_ARMOR_EQUIP_GOLD,
             0.0F, 0.0F, () -> {
         return Ingredient.ofItems(ModItems.RUBY);
+    }),
+    BANANA("banana", 5, new int[]{3, 4, 5, 1}, 100, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
+            0.0F, -5.0F, () -> {
+        return Ingredient.ofItems(ModItems.BANANA_INGOT);
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

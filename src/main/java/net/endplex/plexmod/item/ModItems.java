@@ -43,6 +43,19 @@ public class ModItems {
             new ModHoeItem(ModToolMaterial.BANANA, 0, 0f,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
 
+    public static final Item BANANA_HELMET = registerItem("banana_helmet",
+            new ModArmorItem(ModArmorMaterial.BANANA, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item BANANA_CHESTPLATE = registerItem("banana_chestplate",
+            new ArmorItem(ModArmorMaterial.BANANA, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item BANANA_LEGGINGS = registerItem("banana_leggings",
+            new ArmorItem(ModArmorMaterial.BANANA, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item BANANA_BOOTS = registerItem("banana_boots",
+            new ArmorItem(ModArmorMaterial.BANANA, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+
     
     // -----
 
