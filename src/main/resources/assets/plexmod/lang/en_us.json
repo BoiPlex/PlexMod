@@ -64,10 +64,12 @@
   "item.plexmod.banana_boots": "Banana Boots",
   "item.plexmod.banana_wand": "Banana Wand",
   "item.plexmod.iron_drill": "Iron Drill",
+  "item.plexmod.grenade": "Grenade",
 
   "block.plexmod.banana_ore": "Banana Ore",
   "block.plexmod.banana_block": "Banana Block",
   "block.plexmod.boost_block": "Boost Block",
+  "block.plexmod.landmine": "Landmine",
 
   "enchantment.plexmod.blast": "Blast",
   "enchantment.plexmod.hive_master": "Hive Master",

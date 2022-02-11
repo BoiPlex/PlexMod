@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "plexmod:block/landmine" },
+    "powered=true": { "model": "plexmod:block/landmine_down" }
+  }
+}

@@ -24,11 +24,16 @@ public class ModItems {
             .group(ModItemGroup.PLEX)));
 
     public static final Item BANANA_WAND = registerItem("banana_wand",
-            new BananaWandItem(new FabricItemSettings().group(ModItemGroup.PLEX)));
+            new BananaWandItem(new FabricItemSettings()
+                    .maxCount(1)
+                    .group(ModItemGroup.PLEX)));
 
     public static final Item IRON_DRILL = registerItem("iron_drill",
             new DrillItem(ToolMaterials.IRON, 0, 2f,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
+
+    public static final Item GRENADE = registerItem("grenade",
+            new GrenadeItem(new FabricItemSettings().group(ModItemGroup.PLEX)));
 
     public static final Item BANANA_SWORD = registerItem("banana_sword",
             new SwordItem(ModToolMaterial.BANANA, 10, 1f,

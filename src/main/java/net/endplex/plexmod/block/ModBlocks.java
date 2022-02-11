@@ -18,7 +18,7 @@ import net.endplex.plexmod.world.features.tree.RedwoodSaplingGenerator;
 public class ModBlocks {
 
     public static final Block BANANA_ORE = registerBlock("banana_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)
+            new Block(FabricBlockSettings.of(Material.STONE).strength(3.0f)
                     .breakByTool(FabricToolTags.PICKAXES, 2).requiresTool()));
 
     public static final Block BANANA_BLOCK = registerBlock("banana_block",
@@ -26,8 +26,13 @@ public class ModBlocks {
                     .breakByTool(FabricToolTags.SHEARS, 1)));
 
     public static final Block BOOST_BLOCK = registerBlock("boost_block",
-            new BoostBlock(FabricBlockSettings.of(Material.METAL).strength(6.0f)
+            new BoostBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f)
                     .breakByTool(FabricToolTags.PICKAXES, 2).requiresTool()));
+
+    public static final Block LANDMINE = registerBlock("landmine",
+            new Landmine(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.STONE).strength(4f)
+                            .breakByTool(FabricToolTags.PICKAXES, 2).requiresTool()));
 
     // -----
 
