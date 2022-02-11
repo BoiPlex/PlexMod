@@ -33,7 +33,9 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
 
     public static final Item GRENADE = registerItem("grenade",
-            new GrenadeItem(new FabricItemSettings().group(ModItemGroup.PLEX)));
+            new GrenadeItem(new FabricItemSettings()
+                    .maxCount(16)
+                    .group(ModItemGroup.PLEX)));
 
     public static final Item BANANA_SWORD = registerItem("banana_sword",
             new SwordItem(ModToolMaterial.BANANA, 10, 1f,
