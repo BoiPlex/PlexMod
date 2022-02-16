@@ -2,11 +2,11 @@
   "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
-    "seed": -712343178,
-    "settings": "minecraft:overworld",
+    "seed": -1688530189,
+    "settings": "minecraft:amplified",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "plexmod:lava_land"
+      "biome": "plexmod:dark_land"
     }
   }
 }

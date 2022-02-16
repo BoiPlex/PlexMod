@@ -2,11 +2,14 @@ package net.endplex.plexmod.item.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.TntEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.mob.CreeperEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -14,6 +17,7 @@ import net.minecraft.item.ArmorMaterials;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.endplex.plexmod.item.ModArmorMaterial;
+import net.minecraft.world.explosion.Explosion;
 
 import java.util.Map;
 import java.util.Random;
@@ -71,6 +75,13 @@ public class ModArmorItem extends ArmorItem {
             if (mapArmorMaterial == ModArmorMaterial.BANANA && player.isSneaking()) {
                 player.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 5, 2));
             }
+            /*
+            // Explode if wearing banana armor and on fire
+            if (mapArmorMaterial == ModArmorMaterial.BANANA && player.isOnFire()) {
+                World world = player.getEntityWorld();
+                world.createExplosion(player, player.getX(), player.getY(), player.getZ(), 10, true, Explosion.DestructionType.BREAK);
+            }
+             */
 
             // If player doesn't already have the main effect
             if (!hasPlayerEffect) {

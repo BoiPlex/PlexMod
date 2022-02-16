@@ -1,5 +1,6 @@
 package net.endplex.plexmod.world.features;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.registry.BuiltinRegistries;
@@ -26,6 +27,11 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLUEBELLS_KEY = registerKey("bluebells");
     public static final RegistryKey<ConfiguredFeature<?, ?>> RUBY_ORE_KEY = registerKey("ruby_ore");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BANANA_TREE_KEY = registerKey("banana_spawn");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BANANA_ORE_KEY = registerKey("banana_ore");
+
+    // Trees
+
     public static final ConfiguredFeature<TreeFeatureConfig, ?> REDWOOD_TREE = register("redwood",
             Feature.TREE.configure(new TreeFeatureConfig.Builder(
                     new SimpleBlockStateProvider(ModBlocks.REDWOOD_LOG.getDefaultState()),
@@ -34,10 +40,24 @@ public class ModConfiguredFeatures {
                     new SimpleBlockStateProvider(ModBlocks.REDWOOD_SAPLING.getDefaultState()),
                     new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
                     new TwoLayersFeatureSize(1, 0, 1)).build()));
-
     public static final ConfiguredFeature<?, ?> REDWOOD_TREE_SPAWN = register(REDWOOD_TREE
             .decorate(Decorator.HEIGHTMAP.configure(new HeightmapDecoratorConfig(Heightmap.Type.MOTION_BLOCKING))
                     .spreadHorizontally().applyChance(3)), REDWOOD_TREE_KEY);
+
+    public static final ConfiguredFeature<TreeFeatureConfig, ?> BANANA_TREE = register("banana",
+            Feature.TREE.configure(new TreeFeatureConfig.Builder(
+                    new SimpleBlockStateProvider(Blocks.JUNGLE_LOG.getDefaultState()),
+                    new StraightTrunkPlacer(5, 3, 2),
+                    new SimpleBlockStateProvider(ModBlocks.BANANA_LEAVES.getDefaultState()),
+                    new SimpleBlockStateProvider(ModBlocks.BANANA_SAPLING.getDefaultState()),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 2),
+                    new TwoLayersFeatureSize(1, 0,  1)).build()));
+
+    public static final ConfiguredFeature<?, ?> BANANA_TREE_SPAWN = register(BANANA_TREE
+            .decorate(Decorator.HEIGHTMAP.configure(new HeightmapDecoratorConfig(Heightmap.Type.MOTION_BLOCKING))
+                    .spreadHorizontally().applyChance(3)), BANANA_TREE_KEY);
+
+    // Flowers
 
     public static final ConfiguredFeature<?, ?> BLUEBELLS_CONFIG = register(Feature.FLOWER.configure(
             new RandomPatchFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.BLUEBELLS.getDefaultState()),
@@ -46,10 +66,17 @@ public class ModConfiguredFeatures {
                     .decorate(Decorator.HEIGHTMAP.configure(new HeightmapDecoratorConfig(Heightmap.Type.MOTION_BLOCKING))
                             .spreadHorizontally().repeat(4))), BLUEBELLS_KEY);
 
+    // Ores
+
     public static final ConfiguredFeature<?, ?> RUBY_ORE = register(Feature.ORE.configure(
             new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.RUBY_ORE.getDefaultState(), 8))
             .range(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.aboveBottom(2), YOffset.fixed(45))))
             .spreadHorizontally().repeat(6), RUBY_ORE_KEY);
+
+    public static final ConfiguredFeature<?, ?> BANANA_ORE = register(Feature.ORE.configure(
+                    new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.BANANA_ORE.getDefaultState(), 10))
+            .range(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.aboveBottom(5), YOffset.fixed(40))))
+            .spreadHorizontally().repeat(10), BANANA_ORE_KEY);
 
 
 

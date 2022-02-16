@@ -4,6 +4,9 @@ import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.gen.feature.ConfiguredStructureFeature;
+import net.minecraft.world.gen.feature.FeatureConfig;
+import net.minecraft.world.gen.feature.StructureFeature;
 import net.minecraft.world.gen.surfacebuilder.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilder.SurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilder.SurfaceConfig;
@@ -24,9 +27,22 @@ public class ModSurfaceConfigs {
                     Blocks.PINK_CONCRETE.getDefaultState(),
                     Blocks.PINK_TERRACOTTA.getDefaultState())));
 
+    public static final ConfiguredSurfaceBuilder<TernarySurfaceConfig> DARK_SURFACE_BUILDER = register("dark_surface",
+            SurfaceBuilder.DEFAULT.withConfig(new TernarySurfaceConfig(
+                    Blocks.GRASS_BLOCK.getDefaultState(),
+                    Blocks.BLACK_CONCRETE_POWDER.getDefaultState(),
+                    Blocks.DEEPSLATE.getDefaultState())));
+
+    public static final ConfiguredSurfaceBuilder<TernarySurfaceConfig> AETHER_SURFACE_BUILDER = register("aether_surface",
+            SurfaceBuilder.DEFAULT.withConfig(new TernarySurfaceConfig(
+                    Blocks.GRASS_BLOCK.getDefaultState(),
+                    Blocks.WHITE_CONCRETE_POWDER.getDefaultState(),
+                    Blocks.WHITE_WOOL.getDefaultState())));
+
     private static <T extends SurfaceConfig> ConfiguredSurfaceBuilder<T> register(String name,
                                                                                   ConfiguredSurfaceBuilder<T> surfaceBuilder) {
         return Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER,
                 new Identifier(PlexMod.MOD_ID, name), surfaceBuilder);
     }
+
 }

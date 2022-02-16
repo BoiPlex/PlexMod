@@ -2,11 +2,11 @@
   "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
-    "seed": -712343178,
-    "settings": "minecraft:overworld",
+    "seed": 4792106,
+    "settings": "minecraft:floating_islands",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "plexmod:lava_land"
+      "biome": "plexmod:aether_biome"
     }
   }
 }

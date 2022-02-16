@@ -66,8 +66,12 @@
   "item.plexmod.iron_drill": "Iron Drill",
   "item.plexmod.grenade": "Grenade",
 
+  "item.plexmod.glass_pickaxe": "Glass Pickaxe",
+
   "block.plexmod.banana_ore": "Banana Ore",
   "block.plexmod.banana_block": "Banana Block",
+  "block.plexmod.banana_sapling": "Banana Sapling",
+  "block.plexmod.banana_leaves": "Banana Leaves",
   "block.plexmod.boost_block": "Boost Block",
   "block.plexmod.landmine": "Landmine",
 

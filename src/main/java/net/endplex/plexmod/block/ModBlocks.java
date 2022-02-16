@@ -1,5 +1,6 @@
 package net.endplex.plexmod.block;
 
+import net.endplex.plexmod.world.features.tree.BananaSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
@@ -24,6 +25,13 @@ public class ModBlocks {
     public static final Block BANANA_BLOCK = registerBlock("banana_block",
             new Block(FabricBlockSettings.of(Material.PLANT).strength(2.0f)
                     .breakByTool(FabricToolTags.SHEARS, 1)));
+
+    public static final Block BANANA_SAPLING = registerBlock("banana_sapling",
+            new ModSaplingBlock(new BananaSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.JUNGLE_SAPLING)));
+
+    public static final Block BANANA_LEAVES = registerBlock("banana_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.JUNGLE_LEAVES)));
 
     public static final Block BOOST_BLOCK = registerBlock("boost_block",
             new BoostBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f)

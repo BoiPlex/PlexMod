@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "plexmod:ruby_pickaxe",
-    "plexmod:banana_pickaxe"
+    "plexmod:banana_pickaxe",
+    "plexmod:iron_drill",
+    "plexmod:glass_pickaxe"
   ]
 }

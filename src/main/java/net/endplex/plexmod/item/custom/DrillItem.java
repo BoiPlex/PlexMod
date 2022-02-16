@@ -24,12 +24,10 @@ public class DrillItem extends ModPickaxeItem {
 
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-        if (getMaterial() == ToolMaterials.IRON) {
-            for (int i = -1; i <= 1; i++) {
-                for (int j = -1; j <= 1; j++) {
-                    for (int k = -1; k <= 1; k++) {
-                        world.breakBlock(pos.add(i, j, k), true);
-                    }
+        for (int i = -1; i <= 1; i++) {
+            for (int j = -1; j <= 1; j++) {
+                for (int k = -1; k <= 1; k++) {
+                    world.breakBlock(pos.add(i, j, k), true);
                 }
             }
         }

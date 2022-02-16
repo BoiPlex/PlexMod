@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.endplex.plexmod.PlexMod;
 import net.endplex.plexmod.block.ModBlocks;
 import net.endplex.plexmod.item.ModItems;
+import net.minecraft.item.Items;
 
 public class ModRegistries {
 
@@ -16,6 +17,7 @@ public class ModRegistries {
         registry.add(ModItems.PEPPER, 60);
 
         registry.add(ModItems.BANANA, 100);
+        registry.add(Items.DIAMOND, 1000);
     }
 
     public static void registerStrippables() {

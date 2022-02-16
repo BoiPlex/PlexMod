@@ -17,9 +17,11 @@ public class BerskerkerEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if(!user.world.isClient() && target instanceof LivingEntity) {
+            /*
             ServerWorld world = ((ServerWorld) user.world);
             PlayerEntity player = ((PlayerEntity) user);
             BlockPos position = target.getBlockPos();
+             */
 
             if (((LivingEntity) target).isDead()) {
                 user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 80, level - 1));

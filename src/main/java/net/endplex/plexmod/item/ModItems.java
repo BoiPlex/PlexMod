@@ -66,6 +66,10 @@ public class ModItems {
             new ArmorItem(ModArmorMaterial.BANANA, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
 
+    public static final Item GLASS_PICKAXE = registerItem("glass_pickaxe",
+            new ModPickaxeItem(ModToolMaterial.GLASS, 0, 1f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+
     
     // -----
 

@@ -15,6 +15,9 @@ public enum ModToolMaterial implements ToolMaterial {
     }),
     BANANA(1, 10, 20.0F, 6.0F, 100, () -> {
         return Ingredient.ofItems(ModItems.BANANA_INGOT);
+    }),
+    GLASS(10, 10, 100.0F, 1.0F, 1000, () -> {
+        return Ingredient.ofItems(Items.GLASS);
     });
 
     private final int miningLevel;

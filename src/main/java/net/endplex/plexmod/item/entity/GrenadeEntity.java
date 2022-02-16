@@ -20,6 +20,7 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
@@ -73,6 +74,8 @@ public class GrenadeEntity extends ThrownItemEntity {
             // Create explosion
             ServerWorld serverWorld = ((ServerWorld) world);
             Vec3d pos = hitResult.getPos();
+            BlockPos blockPos = new BlockPos(pos);
+
             serverWorld.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 1, true, Explosion.DestructionType.DESTROY);
         }
 
