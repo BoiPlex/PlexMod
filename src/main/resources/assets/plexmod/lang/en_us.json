@@ -49,10 +49,13 @@
   "enchantment.plexmod.lightning_striker": "Lightning Striker",
 
 
+
   "item.plexmod.banana": "Banana",
   "item.plexmod.banana_bundle": "Banana Bundle",
   "item.plexmod.banana_ingot": "Banana Ingot",
   "item.plexmod.banana_bread": "Banana Bread",
+
+  "item.plexmod.banana_wand": "Banana Wand",
   "item.plexmod.banana_pickaxe": "Banana Pickaxe",
   "item.plexmod.banana_axe": "Banana Axe",
   "item.plexmod.banana_shovel": "Banana Shovel",
@@ -62,11 +65,18 @@
   "item.plexmod.banana_chestplate": "Banana Chestplate",
   "item.plexmod.banana_leggings": "Banana Leggings",
   "item.plexmod.banana_boots": "Banana Boots",
-  "item.plexmod.banana_wand": "Banana Wand",
+
   "item.plexmod.iron_drill": "Iron Drill",
   "item.plexmod.grenade": "Grenade",
-
+  "item.plexmod.poop": "Poop",
   "item.plexmod.glass_pickaxe": "Glass Pickaxe",
+
+  "item.plexmod.banana_potion": "Banana Potion",
+  "item.plexmod.banana_splash_potion": "Banana Splash Potion",
+  "item.plexmod.banana_lingering_potion": "Banana Lingering Potion",
+  "item.plexmod.launch_potion": "Launch Potion",
+  "item.plexmod.launch_splash_potion": "Launch Splash Potion",
+  "item.plexmod.launch_lingering_potion": "Launch Lingering Potion",
 
   "block.plexmod.banana_ore": "Banana Ore",
   "block.plexmod.banana_block": "Banana Block",
@@ -80,9 +90,11 @@
   "enchantment.plexmod.kamakazee": "Kamakazee",
   "enchantment.plexmod.berserker": "Berserker",
   "enchantment.plexmod.test": "Test",
+  "enchantment.plexmod.poopy": "Poopy",
 
   "tooltip.plexmod.iron_drill": "Hold §eSHIFT§r for more Information...",
   "tooltip.plexmod.iron_drill_shift": "Mine in a 3x3 area!",
   "tooltip.plexmod.boost_block": "Step on me for a boost!",
-  "tooltip.plexmod.banana_wand": "Try right clicking blocks or banana blocks!"
+  "tooltip.plexmod.banana_wand": "Try right clicking blocks or banana blocks!",
+  "tooltip.plexmod.poop": "Throw me!"
 }

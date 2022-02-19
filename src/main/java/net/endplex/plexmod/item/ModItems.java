@@ -12,33 +12,27 @@ import net.endplex.plexmod.item.custom.*;
 
 public class ModItems {
 
-    public static final Item BANANA = registerItem("banana", new Item(new FabricItemSettings()
+    public static final Item BANANA = registerItem("banana",
+            new BananaItem(new FabricItemSettings()
             .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())
             .group(ModItemGroup.PLEX)));
-    public static final Item BANANA_BUNDLE = registerItem("banana_bundle", new Item(new FabricItemSettings()
+    public static final Item BANANA_BUNDLE = registerItem("banana_bundle",
+            new Item(new FabricItemSettings()
             .group(ModItemGroup.PLEX)));
-    public static final Item BANANA_INGOT = registerItem("banana_ingot", new Item(new FabricItemSettings()
+    public static final Item BANANA_INGOT = registerItem("banana_ingot",
+            new Item(new FabricItemSettings()
             .group(ModItemGroup.PLEX)));
-    public static final Item BANANA_BREAD = registerItem("banana_bread", new Item(new FabricItemSettings()
-            .food(new FoodComponent.Builder().hunger(6).saturationModifier(1f).build())
+    public static final Item BANANA_BREAD = registerItem("banana_bread",
+            new BananaBreadItem(new FabricItemSettings()
+            .food(new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build())
             .group(ModItemGroup.PLEX)));
-
     public static final Item BANANA_WAND = registerItem("banana_wand",
             new BananaWandItem(new FabricItemSettings()
                     .maxCount(1)
                     .group(ModItemGroup.PLEX)));
 
-    public static final Item IRON_DRILL = registerItem("iron_drill",
-            new DrillItem(ToolMaterials.IRON, 0, 2f,
-                    new FabricItemSettings().group(ModItemGroup.PLEX)));
-
-    public static final Item GRENADE = registerItem("grenade",
-            new GrenadeItem(new FabricItemSettings()
-                    .maxCount(16)
-                    .group(ModItemGroup.PLEX)));
-
     public static final Item BANANA_SWORD = registerItem("banana_sword",
-            new SwordItem(ModToolMaterial.BANANA, 10, 1f,
+            new BananaSwordItem(ModToolMaterial.BANANA, 10, 1f,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
     public static final Item BANANA_SHOVEL = registerItem("banana_shovel",
             new ShovelItem(ModToolMaterial.BANANA, 0, 1f,
@@ -66,10 +60,39 @@ public class ModItems {
             new ArmorItem(ModArmorMaterial.BANANA, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
 
+    public static final Item IRON_DRILL = registerItem("iron_drill",
+            new DrillItem(ToolMaterials.IRON, 0, 2f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item GRENADE = registerItem("grenade",
+            new GrenadeItem(new FabricItemSettings()
+                    .maxCount(16)
+                    .group(ModItemGroup.PLEX)));
+    public static final Item POOP = registerItem("poop",
+            new GrenadeItem(new FabricItemSettings()
+                    .maxCount(16)
+                    .group(ModItemGroup.PLEX)));
     public static final Item GLASS_PICKAXE = registerItem("glass_pickaxe",
             new ModPickaxeItem(ModToolMaterial.GLASS, 0, 1f,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
 
+    public static final Item BANANA_POTION = registerItem("banana_potion",
+            new BananaPotionItem(new FabricItemSettings()
+                    .group(ModItemGroup.PLEX)));
+    public static final Item BANANA_SPLASH_POTION = registerItem("banana_splash_potion",
+            new BananaSplashPotionItem(new FabricItemSettings()
+                    .group(ModItemGroup.PLEX)));
+    public static final Item BANANA_LINGERING_POTION = registerItem("banana_lingering_potion",
+            new BananaLingeringPotionItem(new FabricItemSettings()
+                    .group(ModItemGroup.PLEX)));
+    public static final Item LAUNCH_POTION = registerItem("launch_potion",
+            new LaunchPotionItem(new FabricItemSettings()
+                    .group(ModItemGroup.PLEX)));
+    public static final Item LAUNCH_SPLASH_POTION = registerItem("launch_splash_potion",
+            new BananaPotionItem(new FabricItemSettings()
+                    .group(ModItemGroup.PLEX)));
+    public static final Item LAUNCH_LINGERING_POTION = registerItem("launch_lingering_potion",
+            new BananaPotionItem(new FabricItemSettings()
+                    .group(ModItemGroup.PLEX)));
     
     // -----
 

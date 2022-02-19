@@ -23,10 +23,13 @@ public class ModEnchantments {
     public static Enchantment BERSERKER = register("berserker",
             new BerskerkerEnchantment(Enchantment.Rarity.RARE,
                     EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-
     public static Enchantment TEST = register("test",
-            new TestEnchantment(Enchantment.Rarity.UNCOMMON,
-                    EnchantmentTarget.BREAKABLE, EquipmentSlot.MAINHAND));
+            new TestEnchantment(Enchantment.Rarity.COMMON,
+                    EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+    public static Enchantment POOPY = register("poopy",
+            new PoopyEnchantment(Enchantment.Rarity.RARE,
+                    EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+
 
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(PlexMod.MOD_ID, name), enchantment);

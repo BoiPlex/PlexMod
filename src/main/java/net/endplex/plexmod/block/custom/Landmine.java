@@ -23,8 +23,6 @@ public class Landmine extends ModPressurePlateBlock {
     protected void playPressSound(WorldAccess world, BlockPos pos) {
         if(!world.isClient()) {
             ServerWorld serverWorld = ((ServerWorld) world);
-            // Not using
-            // float power = new Random().nextFloat() * 2 + 1
             serverWorld.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 3, false, Explosion.DestructionType.DESTROY);
         }
 

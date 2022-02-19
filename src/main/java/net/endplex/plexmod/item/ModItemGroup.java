@@ -12,5 +12,5 @@ public class ModItemGroup {
             () -> new ItemStack(ModItems.RUBY));
 
     public static final ItemGroup PLEX = FabricItemGroupBuilder.build(new Identifier(PlexMod.MOD_ID, "plex"),
-            () -> new ItemStack(Items.BAKED_POTATO));
+            () -> new ItemStack(ModItems.BANANA_BUNDLE));
 }

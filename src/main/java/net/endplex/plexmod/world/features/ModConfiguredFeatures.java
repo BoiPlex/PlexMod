@@ -26,6 +26,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> REDWOOD_TREE_KEY = registerKey("redwood_spawn");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLUEBELLS_KEY = registerKey("bluebells");
     public static final RegistryKey<ConfiguredFeature<?, ?>> RUBY_ORE_KEY = registerKey("ruby_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DIAMOND_BLOCK_KEY = registerKey("diamond_block");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> BANANA_TREE_KEY = registerKey("banana_spawn");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BANANA_ORE_KEY = registerKey("banana_ore");
