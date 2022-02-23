@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:scute"
+    }
+  },
+  "result": {
+    "item": "plexmod:turtle_leggings",
+    "count": 1
+  }
+}
