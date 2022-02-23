@@ -3,24 +3,21 @@
   "pattern": [
     "## ",
     "#RP",
-    " PO"
+    " P#"
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_block"
+      "item": "minecraft:oak_planks"
     },
     "R": {
       "item": "minecraft:redstone_block"
     },
     "P": {
       "item": "minecraft:piston"
-    },
-    "O": {
-      "item": "minecraft:oak_planks"
     }
   },
   "result": {
-    "item": "plexmod:iron_drill",
+    "item": "plexmod:wood_drill",
     "count": 1
   }
 }

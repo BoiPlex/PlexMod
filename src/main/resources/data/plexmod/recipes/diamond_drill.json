@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_block"
+      "item": "minecraft:diamond_block"
     },
     "R": {
       "item": "minecraft:redstone_block"
@@ -20,7 +20,7 @@
     }
   },
   "result": {
-    "item": "plexmod:iron_drill",
+    "item": "plexmod:diamond_drill",
     "count": 1
   }
 }

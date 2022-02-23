@@ -66,10 +66,17 @@
   "item.plexmod.banana_leggings": "Banana Leggings",
   "item.plexmod.banana_boots": "Banana Boots",
 
-  "item.plexmod.iron_drill": "Iron Drill",
   "item.plexmod.grenade": "Grenade",
   "item.plexmod.poop": "Poop",
   "item.plexmod.glass_pickaxe": "Glass Pickaxe",
+
+  "item.plexmod.wood_drill": "Wood Drill",
+  "item.plexmod.stone_drill": "Stone Drill",
+  "item.plexmod.iron_drill": "Iron Drill",
+  "item.plexmod.gold_drill": "Gold Drill",
+  "item.plexmod.diamond_drill": "Diamond Drill",
+  "item.plexmod.netherite_drill": "Netherite Drill",
+  "item.plexmod.banana_drill": "Banana Drill",
 
   "item.plexmod.banana_potion": "Banana Potion",
   "item.plexmod.banana_splash_potion": "Banana Splash Potion",
@@ -77,6 +84,10 @@
   "item.plexmod.launch_potion": "Launch Potion",
   "item.plexmod.launch_splash_potion": "Launch Splash Potion",
   "item.plexmod.launch_lingering_potion": "Launch Lingering Potion",
+
+  "item.plexmod.turtle_chestplate": "Turtle Chestplate",
+  "item.plexmod.turtle_leggings": "Turtle Leggings",
+  "item.plexmod.turtle_boots": "Turtle Boots",
 
   "block.plexmod.banana_ore": "Banana Ore",
   "block.plexmod.banana_block": "Banana Block",
@@ -93,7 +104,7 @@
   "enchantment.plexmod.poopy": "Poopy",
 
   "tooltip.plexmod.iron_drill": "Hold §eSHIFT§r for more Information...",
-  "tooltip.plexmod.iron_drill_shift": "Mine in a 3x3 area!",
+  "tooltip.plexmod.iron_drill_shift": "Break multiple blocks! Shift to strip mine!",
   "tooltip.plexmod.boost_block": "Step on me for a boost!",
   "tooltip.plexmod.banana_wand": "Try right clicking blocks or banana blocks!",
   "tooltip.plexmod.poop": "Throw me!"

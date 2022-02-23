@@ -28,6 +28,7 @@ public class ModArmorItem extends ArmorItem {
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffect>())
                     .put(ModArmorMaterial.RUBY, StatusEffects.INVISIBILITY)
                     .put(ModArmorMaterial.BANANA, StatusEffects.SPEED)
+                    .put(ArmorMaterials.TURTLE, StatusEffects.DOLPHINS_GRACE)
                     .build();
             // If you want unique effects/abilities or no potion effect you can edit the addStatusEffectForMaterial method
 
@@ -38,8 +39,7 @@ public class ModArmorItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if(!world.isClient()) {
-            if(entity instanceof PlayerEntity) {
-                PlayerEntity player = (PlayerEntity)entity;
+            if(entity instanceof PlayerEntity player) {
 
                 if(hasFullSuitOfArmorOn(player)) {
                     evaluateArmorEffects(player);

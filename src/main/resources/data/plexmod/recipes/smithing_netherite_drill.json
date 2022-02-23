@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "plexmod:diamond_drill"
+  },
+  "addition": {
+    "item": "minecraft:netherite_block"
+  },
+  "result": {
+    "item": "plexmod:netherite_drill"
+  }
+}

@@ -11,7 +11,6 @@ import net.endplex.plexmod.config.ModConfigs;
 import net.endplex.plexmod.item.custom.*;
 
 public class ModItems {
-
     public static final Item BANANA = registerItem("banana",
             new BananaItem(new FabricItemSettings()
             .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())
@@ -60,9 +59,6 @@ public class ModItems {
             new ArmorItem(ModArmorMaterial.BANANA, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
 
-    public static final Item IRON_DRILL = registerItem("iron_drill",
-            new DrillItem(ToolMaterials.IRON, 0, 2f,
-                    new FabricItemSettings().group(ModItemGroup.PLEX)));
     public static final Item GRENADE = registerItem("grenade",
             new GrenadeItem(new FabricItemSettings()
                     .maxCount(16)
@@ -73,6 +69,28 @@ public class ModItems {
                     .group(ModItemGroup.PLEX)));
     public static final Item GLASS_PICKAXE = registerItem("glass_pickaxe",
             new ModPickaxeItem(ModToolMaterial.GLASS, 0, 1f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+
+    public static final Item WOOD_DRILL = registerItem("wood_drill",
+            new DrillItem(ToolMaterials.WOOD, 0, 2f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item STONE_DRILL = registerItem("stone_drill",
+            new DrillItem(ToolMaterials.STONE, 0, 2f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item IRON_DRILL = registerItem("iron_drill",
+            new DrillItem(ToolMaterials.IRON, 0, 2f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item GOLD_DRILL = registerItem("gold_drill",
+            new DrillItem(ToolMaterials.GOLD, 0, 2f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item DIAMOND_DRILL = registerItem("diamond_drill",
+            new DrillItem(ToolMaterials.DIAMOND, 0, 2f,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item NETHERITE_DRILL = registerItem("netherite_drill",
+            new DrillItem(ToolMaterials.NETHERITE, 0, 2f,
+                    new FabricItemSettings().fireproof().group(ModItemGroup.PLEX)));
+    public static final Item BANANA_DRILL = registerItem("banana_drill",
+            new DrillItem(ModToolMaterial.BANANA, 0, 2f,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
 
     public static final Item BANANA_POTION = registerItem("banana_potion",
@@ -93,6 +111,18 @@ public class ModItems {
     public static final Item LAUNCH_LINGERING_POTION = registerItem("launch_lingering_potion",
             new BananaPotionItem(new FabricItemSettings()
                     .group(ModItemGroup.PLEX)));
+
+    // Rest of turtle armor
+    public static final Item TURTLE_CHESTPLATE = registerItem("turtle_chestplate",
+            new TurtleChestplateItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item TURTLE_LEGGINGS = registerItem("turtle_leggings",
+            new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item TURTLE_BOOTS = registerItem("turtle_boots",
+            new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+
     
     // -----
 
