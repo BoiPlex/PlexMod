@@ -75,9 +75,14 @@ public class ModConfiguredFeatures {
             .spreadHorizontally().repeat(6), RUBY_ORE_KEY);
 
     public static final ConfiguredFeature<?, ?> BANANA_ORE = register(Feature.ORE.configure(
-                    new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.BANANA_ORE.getDefaultState(), 10))
+            new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.BANANA_ORE.getDefaultState(), 10))
             .range(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.aboveBottom(5), YOffset.fixed(40))))
             .spreadHorizontally().repeat(10), BANANA_ORE_KEY);
+
+    public static final ConfiguredFeature<?, ?> DIAMOND_BLOCK = register(Feature.ORE.configure(
+                    new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, Blocks.DIAMOND_BLOCK.getDefaultState(), 20))
+            .range(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.aboveBottom(5), YOffset.fixed(40))))
+            .spreadHorizontally().repeat(10), DIAMOND_BLOCK_KEY);
 
 
 

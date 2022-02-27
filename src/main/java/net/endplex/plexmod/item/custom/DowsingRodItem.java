@@ -105,7 +105,7 @@ public class DowsingRodItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
 
-        if(Screen.hasShiftDown()){
+        if(Screen.hasShiftDown()) {
             tooltip.add(new TranslatableText("tooltip.plexmod.dowsing_rod_shift"));
         } else {
             tooltip.add(new TranslatableText("tooltip.plexmod.dowsing_rod"));

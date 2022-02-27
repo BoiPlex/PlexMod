@@ -1,10 +1,12 @@
 package net.endplex.plexmod.enchantments;
 
+import net.endplex.plexmod.sounds.ModSounds;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.world.explosion.Explosion;
 
 public class BlastEnchantment extends Enchantment {
@@ -23,6 +25,8 @@ public class BlastEnchantment extends Enchantment {
                 world.createExplosion(target, target.getX(), target.getY(), target.getZ(), level, true, Explosion.DestructionType.BREAK);
                 player.addExperience(-level * 3);
             }
+
+            world.playSound(player, player.getBlockPos(), ModSounds.SMALL_EXPLOSION, SoundCategory.AMBIENT, 1f, 1f);
 
             /*
             TntEntity tntEntity = EntityType.TNT.create(world);

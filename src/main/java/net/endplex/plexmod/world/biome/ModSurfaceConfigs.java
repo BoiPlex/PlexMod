@@ -39,6 +39,12 @@ public class ModSurfaceConfigs {
                     Blocks.WHITE_CONCRETE_POWDER.getDefaultState(),
                     Blocks.WHITE_WOOL.getDefaultState())));
 
+    public static final ConfiguredSurfaceBuilder<TernarySurfaceConfig> BANANA_SURFACE_BUILDER = register("banana_surface",
+            SurfaceBuilder.DEFAULT.withConfig(new TernarySurfaceConfig(
+                    ModBlocks.BANANA_BLOCK.getDefaultState(),
+                    Blocks.JUNGLE_LOG.getDefaultState(),
+                    Blocks.BEE_NEST.getDefaultState())));
+
     private static <T extends SurfaceConfig> ConfiguredSurfaceBuilder<T> register(String name,
                                                                                   ConfiguredSurfaceBuilder<T> surfaceBuilder) {
         return Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER,

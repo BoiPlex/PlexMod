@@ -27,6 +27,12 @@ public class ModDimensions {
     private static final RegistryKey<DimensionType> AETHER_DIMENSION_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY,
             new Identifier(PlexMod.MOD_ID, "aether_type"));
 
+    private static final RegistryKey<DimensionOptions> BANANA_DIMENSION_KEY = RegistryKey.of(Registry.DIMENSION_KEY,
+            new Identifier(PlexMod.MOD_ID, "banana"));
+    public static RegistryKey<World> BANANA_KEY = RegistryKey.of(Registry.WORLD_KEY, BANANA_DIMENSION_KEY.getValue());
+    private static final RegistryKey<DimensionType> BANANA_DIMENSION_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY,
+            new Identifier(PlexMod.MOD_ID, "banana_type"));
+
     public static void register() {
         System.out.println("Registering ModDimensions for " + PlexMod.MOD_ID);
     }

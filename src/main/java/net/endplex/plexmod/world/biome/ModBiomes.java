@@ -30,6 +30,9 @@ public class ModBiomes {
     public static final RegistryKey<Biome> AETHER_BIOME_KEY = registerKey("aether_biome");
     public static final Biome AETHER_BIOME = createAetherBiome();
 
+    public static final RegistryKey<Biome> BANANA_BIOME_KEY = registerKey("banana_biome");
+    public static final Biome BANANA_BIOME = createBananaLand();
+
     private static Biome createLavaLand() {
         SpawnSettings.Builder spawnSettings = new SpawnSettings.Builder();
         DefaultBiomeFeatures.addFarmAnimals(spawnSettings);
@@ -175,6 +178,37 @@ public class ModBiomes {
                 .generationSettings(generationSettings.build()).build();
     }
 
+    private static Biome createBananaLand() {
+        SpawnSettings.Builder spawnSettings = new SpawnSettings.Builder();
+        DefaultBiomeFeatures.addFarmAnimals(spawnSettings);
+        DefaultBiomeFeatures.addMonsters(spawnSettings, 95, 5, 100);
+
+        GenerationSettings.Builder generationSettings = new GenerationSettings.Builder();
+        generationSettings.surfaceBuilder(ModSurfaceConfigs.BANANA_SURFACE_BUILDER);
+        DefaultBiomeFeatures.addDefaultUndergroundStructures(generationSettings);
+        DefaultBiomeFeatures.addLandCarvers(generationSettings);
+        DefaultBiomeFeatures.addDefaultLakes(generationSettings);
+        DefaultBiomeFeatures.addDripstone(generationSettings);
+        DefaultBiomeFeatures.addIcebergs(generationSettings);
+        generationSettings.feature(GenerationStep.Feature.LAKES, ConfiguredFeatures.SEA_PICKLE);
+
+        DefaultBiomeFeatures.addDungeons(generationSettings);
+        DefaultBiomeFeatures.addMineables(generationSettings);
+        DefaultBiomeFeatures.addDefaultOres(generationSettings);
+        generationSettings.feature(GenerationStep.Feature.UNDERGROUND_ORES, ModConfiguredFeatures.DIAMOND_BLOCK);
+
+        DefaultBiomeFeatures.addDefaultDisks(generationSettings);
+        DefaultBiomeFeatures.addSprings(generationSettings);
+
+        return (new Biome.Builder()).precipitation(Biome.Precipitation.RAIN).category(Biome.Category.NONE)
+                .depth(0.125F).scale(0.05F).temperature(0.8F).downfall(0.4F)
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(0xe4ff19).waterFogColor(0xa3f743)
+                        .fogColor(0xf0db24).skyColor(0xebff57)
+                        .build()).spawnSettings(spawnSettings.build())
+                .generationSettings(generationSettings.build()).build();
+    }
+
     public static RegistryKey<Biome> registerKey(String name) {
         return RegistryKey.of(Registry.BIOME_KEY, new Identifier(PlexMod.MOD_ID, name));
 
@@ -182,14 +216,19 @@ public class ModBiomes {
 
     public static void registerBiomes() {
         Registry.register(BuiltinRegistries.BIOME, LAVA_LAND_KEY.getValue(), LAVA_LAND);
-        Registry.register(BuiltinRegistries.BIOME, PINK_LAND_KEY.getValue(), PINK_LAND);
-        Registry.register(BuiltinRegistries.BIOME, DARK_LAND_KEY.getValue(), DARK_LAND);
-        Registry.register(BuiltinRegistries.BIOME, AETHER_BIOME_KEY.getValue(), AETHER_BIOME);
-
         OverworldBiomes.addContinentalBiome(LAVA_LAND_KEY, OverworldClimate.DRY, 1D);
+
+        Registry.register(BuiltinRegistries.BIOME, PINK_LAND_KEY.getValue(), PINK_LAND);
         OverworldBiomes.addContinentalBiome(PINK_LAND_KEY, OverworldClimate.COOL, 1D);
+
+        Registry.register(BuiltinRegistries.BIOME, DARK_LAND_KEY.getValue(), DARK_LAND);
         OverworldBiomes.addContinentalBiome(DARK_LAND_KEY, OverworldClimate.TEMPERATE, 1D);
+
+        Registry.register(BuiltinRegistries.BIOME, AETHER_BIOME_KEY.getValue(), AETHER_BIOME);
         OverworldBiomes.addContinentalBiome(AETHER_BIOME_KEY, OverworldClimate.SNOWY, 1D);
+
+        Registry.register(BuiltinRegistries.BIOME, BANANA_BIOME_KEY.getValue(), BANANA_BIOME);
+        OverworldBiomes.addContinentalBiome(BANANA_BIOME_KEY, OverworldClimate.TEMPERATE, 1D);
 
     }
 

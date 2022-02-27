@@ -5,6 +5,7 @@ import net.endplex.plexmod.block.ModBlocks;
 import net.endplex.plexmod.item.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
+import net.minecraft.world.dimension.DimensionType;
 
 public class ModPortals {
     public static void registerPortals() {
@@ -30,5 +31,22 @@ public class ModPortals {
                 .destDimID(ModDimensions.AETHER_KEY.getValue())
                 .tintColor(58, 178, 218)
                 .registerPortal();
+
+        // End Dimension (Vanilla)
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(Blocks.END_STONE_BRICKS)
+                .lightWithItem(Items.DRAGON_BREATH)
+                .destDimID(DimensionType.THE_END_ID)
+                .tintColor(245, 90, 250)
+                .registerPortal();
+
+        // End Dimension (Vanilla)
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.BANANA_BLOCK)
+                .lightWithItem(ModItems.BANANA)
+                .destDimID(ModDimensions.BANANA_KEY.getValue())
+                .tintColor(227, 250, 55)
+                .registerPortal();
+
     }
 }

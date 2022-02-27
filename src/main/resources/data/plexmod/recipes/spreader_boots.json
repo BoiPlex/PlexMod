@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "NKN",
+    "DDD"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:grass_block"
+    },
+    "N": {
+      "item": "minecraft:netherite_block"
+    },
+    "K": {
+      "item": "minecraft:netherite_boots"
+    },
+    "D": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "plexmod:spreader_boots",
+    "count": 1
+  }
+}

@@ -2,11 +2,51 @@
   "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
-    "seed": -1688530189,
-    "settings": "minecraft:amplified",
+    "seed": 1965459187,
+    "settings": "minecraft:nether",
     "biome_source": {
-      "type": "minecraft:fixed",
-      "biome": "plexmod:dark_land"
+      "type": "minecraft:multi_noise",
+      "seed": 0,
+      "altitude_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "temperature_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "humidity_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "weirdness_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "biomes": [
+        {
+          "biome": "plexmod:dark_land",
+          "parameters": {
+            "altitude": 0,
+            "temperature": 0,
+            "humidity": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        }
+      ]
     }
   }
 }

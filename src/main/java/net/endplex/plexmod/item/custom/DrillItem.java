@@ -122,7 +122,7 @@ public class DrillItem extends ModPickaxeItem {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        if(Screen.hasShiftDown()){
+        if(Screen.hasShiftDown()) {
             tooltip.add(new TranslatableText("tooltip.plexmod.iron_drill_shift"));
         } else {
             tooltip.add(new TranslatableText("tooltip.plexmod.iron_drill"));

@@ -43,7 +43,7 @@
   "itemGroup.plexmod.ruby": "Ruby Mod",
   "itemGroup.plexmod.plex": "Plex Mod",
 
-  "tooltip.plexmod.dowsing_rod": "Hold §eSHIFT§r for more Information!",
+  "tooltip.plexmod.dowsing_rod": "Hold §eSHIFT§r for more info!",
   "tooltip.plexmod.dowsing_rod_shift": "Click a Block and discover valuables down below!",
 
   "enchantment.plexmod.lightning_striker": "Lightning Striker",
@@ -69,6 +69,7 @@
   "item.plexmod.grenade": "Grenade",
   "item.plexmod.poop": "Poop",
   "item.plexmod.glass_pickaxe": "Glass Pickaxe",
+  "item.plexmod.spreader_boots": "Spreader Boots",
 
   "item.plexmod.wood_drill": "Wood Drill",
   "item.plexmod.stone_drill": "Stone Drill",
@@ -103,9 +104,12 @@
   "enchantment.plexmod.test": "Test",
   "enchantment.plexmod.poopy": "Poopy",
 
-  "tooltip.plexmod.iron_drill": "Hold §eSHIFT§r for more Information...",
-  "tooltip.plexmod.iron_drill_shift": "Break multiple blocks! Shift to strip mine!",
+  "tooltip.plexmod.banana_sword": "Right click to shoot poop!",
+  "tooltip.plexmod.banana_wand": "Try right clicking blocks and banana blocks!",
   "tooltip.plexmod.boost_block": "Step on me for a boost!",
-  "tooltip.plexmod.banana_wand": "Try right clicking blocks or banana blocks!",
-  "tooltip.plexmod.poop": "Throw me!"
+  "tooltip.plexmod.iron_drill": "Hold §eSHIFT§r for more info...",
+  "tooltip.plexmod.iron_drill_shift": "Break multiple blocks! Shift to strip mine!",
+  "tooltip.plexmod.poop": "Throw me!",
+  "tooltip.plexmod.spreader_boots": "Hold §eSHIFT§r for more Info...",
+  "tooltip.plexmod.spreader_boots_shift": "Hold a block and move to spread it!"
 }
