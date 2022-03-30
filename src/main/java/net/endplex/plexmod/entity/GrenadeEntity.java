@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package net.endplex.plexmod.item.entity;
+package net.endplex.plexmod.entity;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;

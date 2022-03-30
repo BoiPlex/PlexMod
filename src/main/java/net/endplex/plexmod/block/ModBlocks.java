@@ -31,7 +31,7 @@ public class ModBlocks {
                     FabricBlockSettings.copy(Blocks.JUNGLE_SAPLING)));
 
     public static final Block BANANA_LEAVES = registerBlock("banana_leaves",
-            new LeavesBlock(FabricBlockSettings.copy(Blocks.JUNGLE_LEAVES)));
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.JUNGLE_LEAVES).noCollision()));
 
     public static final Block BOOST_BLOCK = registerBlock("boost_block",
             new BoostBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f)

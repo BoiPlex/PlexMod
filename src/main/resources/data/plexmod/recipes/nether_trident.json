@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##F",
+    "#T#",
+    "R##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:magma_block"
+    },
+    "F": {
+      "item": "minecraft:fire_charge"
+    },
+    "T": {
+      "item": "minecraft:trident"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "plexmod:nether_trident",
+    "count": 1
+  }
+}

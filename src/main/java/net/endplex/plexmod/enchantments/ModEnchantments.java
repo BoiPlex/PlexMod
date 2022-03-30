@@ -28,7 +28,7 @@ public class ModEnchantments {
                     EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
     public static Enchantment POOPY = register("poopy",
             new PoopyEnchantment(Enchantment.Rarity.RARE,
-                    EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+                    EnchantmentTarget.BREAKABLE, EquipmentSlot.MAINHAND));
 
 
     private static Enchantment register(String name, Enchantment enchantment) {

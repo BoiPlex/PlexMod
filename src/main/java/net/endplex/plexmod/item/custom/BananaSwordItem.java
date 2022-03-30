@@ -1,7 +1,7 @@
 package net.endplex.plexmod.item.custom;
 
 import net.endplex.plexmod.item.ModItems;
-import net.endplex.plexmod.item.entity.GrenadeEntity;
+import net.endplex.plexmod.entity.GrenadeEntity;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;

@@ -21,7 +21,7 @@
       "net.endplex.plexmod.PlexMod"
     ],
     "client": [
-      "net.endplex.plexmod.TutorialClientMod"
+      "net.endplex.plexmod.PlexModClient"
     ]
   },
   "mixins": [

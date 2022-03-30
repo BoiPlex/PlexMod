@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##H",
+    "#T#",
+    "L##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:water_bucket"
+    },
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "T": {
+      "item": "minecraft:trident"
+    },
+    "L": {
+      "item": "minecraft:lapis_block"
+    }
+  },
+  "result": {
+    "item": "plexmod:ocean_trident",
+    "count": 1
+  }
+}

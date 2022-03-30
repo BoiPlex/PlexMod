@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##G",
+    "#T#",
+    "L##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:feather"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "T": {
+      "item": "minecraft:trident"
+    },
+    "L": {
+      "item": "minecraft:light_blue_wool"
+    }
+  },
+  "result": {
+    "item": "plexmod:sky_trident",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "plexmod:earth_trident",
+    "plexmod:ocean_trident",
+    "plexmod:ice_trident",
+    "plexmod:sky_trident",
+    "plexmod:nether_trident",
+    "plexmod:end_trident"
+  ]
+}

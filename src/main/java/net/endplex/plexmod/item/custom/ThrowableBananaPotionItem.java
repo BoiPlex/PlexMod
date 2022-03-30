@@ -5,14 +5,9 @@
 
 package net.endplex.plexmod.item.custom;
 
-import net.endplex.plexmod.item.entity.BananaPotionEntity;
+import net.endplex.plexmod.entity.BananaPotionEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.projectile.thrown.PotionEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.LingeringPotionItem;
-import net.minecraft.item.SplashPotionItem;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;

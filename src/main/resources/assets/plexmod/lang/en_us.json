@@ -90,6 +90,18 @@
   "item.plexmod.turtle_leggings": "Turtle Leggings",
   "item.plexmod.turtle_boots": "Turtle Boots",
 
+  "item.plexmod.ender_dragon_spawn_egg": "Ender Dragon Spawn Egg",
+  "item.plexmod.wither_spawn_egg": "Wither Spawn Egg",
+  "item.plexmod.iron_golem_spawn_egg": "Iron Golem Spawn Egg",
+  "item.plexmod.snow_golem_spawn_egg": "Snow Golem Spawn Egg",
+
+  "item.plexmod.earth_trident": "Earth Trident",
+  "item.plexmod.ocean_trident": "Ocean Trident",
+  "item.plexmod.ice_trident": "Ice Trident",
+  "item.plexmod.sky_trident": "Sky Trident",
+  "item.plexmod.nether_trident": "Nether Trident",
+  "item.plexmod.end_trident": "End Trident",
+
   "block.plexmod.banana_ore": "Banana Ore",
   "block.plexmod.banana_block": "Banana Block",
   "block.plexmod.banana_sapling": "Banana Sapling",
@@ -111,5 +123,6 @@
   "tooltip.plexmod.iron_drill_shift": "Break multiple blocks! Shift to strip mine!",
   "tooltip.plexmod.poop": "Throw me!",
   "tooltip.plexmod.spreader_boots": "Hold §eSHIFT§r for more Info...",
-  "tooltip.plexmod.spreader_boots_shift": "Hold a block and move to spread it!"
+  "tooltip.plexmod.spreader_boots_shift": "Hold a block and move to spread it!",
+  "tooltip.plexmod.end_trident": "Hold shift while thrown to ride the trident!"
 }

@@ -1,6 +1,8 @@
 package net.endplex.plexmod.item;
 
+import net.endplex.plexmod.item.custom.trident.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -126,8 +128,35 @@ public class ModItems {
             new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.PLEX)));
 
-    
-    // -----
+    // Spawn eggs
+    public static final Item ENDER_DRAGON_SPAWN_EGG = registerItem("ender_dragon_spawn_egg",
+            new ModSpawnEggItem(EntityType.ENDER_DRAGON,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item WITHER_SPAWN_EGG = registerItem("wither_spawn_egg",
+            new ModSpawnEggItem(EntityType.WITHER,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item IRON_GOLEM_SPAWN_EGG = registerItem("iron_golem_spawn_egg",
+            new ModSpawnEggItem(EntityType.IRON_GOLEM,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+    public static final Item SNOW_GOLEM_SPAWN_EGG = registerItem("snow_golem_spawn_egg",
+            new ModSpawnEggItem(EntityType.SNOW_GOLEM,
+                    new FabricItemSettings().group(ModItemGroup.PLEX)));
+
+    // Tridents
+    public static final Item EARTH_TRIDENT = registerItem("earth_trident",
+            new EarthTridentItem(new FabricItemSettings().maxDamage(250).group(ModItemGroup.PLEX)));
+    public static final Item OCEAN_TRIDENT = registerItem("ocean_trident",
+            new OceanTridentItem(new FabricItemSettings().maxDamage(250).group(ModItemGroup.PLEX)));
+    public static final Item ICE_TRIDENT = registerItem("ice_trident",
+            new IceTridentItem(new FabricItemSettings().maxDamage(250).group(ModItemGroup.PLEX)));
+    public static final Item SKY_TRIDENT = registerItem("sky_trident",
+            new SkyTridentItem(new FabricItemSettings().maxDamage(250).group(ModItemGroup.PLEX)));
+    public static final Item NETHER_TRIDENT = registerItem("nether_trident",
+            new NetherTridentItem(new FabricItemSettings().maxDamage(250).fireproof().group(ModItemGroup.PLEX)));
+    public static final Item END_TRIDENT = registerItem("end_trident",
+            new EndTridentItem(new FabricItemSettings().maxDamage(250).group(ModItemGroup.PLEX)));
+
+    // --------------- EXAMPLE MOD ---------------
 
     public static final Item RUBY = registerItem("ruby",
             new Item(new FabricItemSettings().group(ModItemGroup.RUBY)));

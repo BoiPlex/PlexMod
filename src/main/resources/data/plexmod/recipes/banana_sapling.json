@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#J#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "plexmod:banana"
+    },
+    "J": {
+      "item": "minecraft:jungle_sapling"
+    }
+  },
+  "result": {
+    "item": "plexmod:banana_sapling",
+    "count": 1
+  }
+}

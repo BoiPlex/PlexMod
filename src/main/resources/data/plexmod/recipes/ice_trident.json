@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##B",
+    "#T#",
+    "D##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:ice"
+    },
+    "B": {
+      "item": "minecraft:blue_ice"
+    },
+    "T": {
+      "item": "minecraft:trident"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "plexmod:ice_trident",
+    "count": 1
+  }
+}

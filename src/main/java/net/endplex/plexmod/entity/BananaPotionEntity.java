@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package net.endplex.plexmod.item.entity;
+package net.endplex.plexmod.entity;
 
 import java.util.Iterator;
 import java.util.List;

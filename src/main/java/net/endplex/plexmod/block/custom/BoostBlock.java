@@ -3,6 +3,7 @@ package net.endplex.plexmod.block.custom;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -26,12 +27,10 @@ public class BoostBlock extends Block {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (entity instanceof PlayerEntity) {
-            PlayerEntity player = ((PlayerEntity) entity);
-
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 15, 9));
+        if (entity instanceof LivingEntity livingEntity) {
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 15, 9));
             world.addBlockBreakParticles(pos, state);
-            player.playSound(SoundEvents.ITEM_SPYGLASS_USE, 3, 10);
+            livingEntity.playSound(SoundEvents.ITEM_SPYGLASS_USE, 3, 10);
         }
 
         super.onSteppedOn(world, pos, state, entity);

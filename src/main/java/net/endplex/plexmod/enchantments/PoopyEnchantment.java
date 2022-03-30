@@ -1,7 +1,7 @@
 package net.endplex.plexmod.enchantments;
 
 import net.endplex.plexmod.item.ModItems;
-import net.endplex.plexmod.item.entity.GrenadeEntity;
+import net.endplex.plexmod.entity.GrenadeEntity;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.*;
